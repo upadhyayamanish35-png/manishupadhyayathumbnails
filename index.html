@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://apis.google.com/js/platform.js"></script>
 <style>
 :root{--bg:#070707;--card:#111;--text:#fff;--muted:#a0a0a0;--accent:#ff5c35;--border:rgba(255,255,255,.1)}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -29,18 +30,18 @@ h1{font-size:clamp(52px,7vw,90px);line-height:.96;letter-spacing:-5px;font-weigh
 section{padding:110px 7%}.label{font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:800;color:var(--accent);margin-bottom:12px}.title{font-size:clamp(38px,5vw,62px);line-height:.98;letter-spacing:-3px}.desc{color:var(--muted);line-height:1.7;max-width:560px;margin-top:17px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:45px}.item{aspect-ratio:16/10;overflow:hidden;border-radius:13px;border:1px solid var(--border);position:relative;background:#101010}.item img{width:100%;height:100%;object-fit:cover;transition:.45s}.overlay{position:absolute;inset:0;display:flex;align-items:flex-end;padding:22px;background:linear-gradient(transparent 35%,rgba(0,0,0,.92));opacity:0;transition:.35s}.item:hover img{transform:scale(1.07)}.item:hover .overlay{opacity:1}.overlay h3{font-size:18px}.overlay p{font-size:11px;color:#bbb;margin-top:5px}
 .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:45px}.service{padding:30px;border:1px solid var(--border);border-radius:15px;background:linear-gradient(145deg,#141414,#0c0c0c);transition:.3s}.service:hover{transform:translateY(-7px);border-color:rgba(255,92,53,.45)}.number{color:var(--accent);font-weight:800;font-size:12px}.service h3{font-size:21px;margin:22px 0 12px}.service p{font-size:13px;color:var(--muted);line-height:1.7}
-.tools{display:flex;flex-wrap:wrap;gap:10px;margin-top:35px}.tool{padding:12px 17px;border:1px solid var(--border);background:#101010;border-radius:50px;font-size:12px;font-weight:700;transition:.25s}.tool:hover{background:#fff;color:#000}
+.tools{display:flex;flex-wrap:wrap;gap:10px;margin-top:35px}.clients{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:45px}.client-card{padding:30px;border:1px solid var(--border);border-radius:18px;background:linear-gradient(145deg,#141414,#0c0c0c);transition:.3s}.client-card:hover{transform:translateY(-7px);border-color:rgba(255,92,53,.45)}.client-top{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:24px}.client-name{font-size:20px;font-weight:800}.client-role{font-size:11px;color:var(--accent);text-transform:uppercase;letter-spacing:1.5px;margin-top:6px}.youtube-icon{width:46px;height:32px;border-radius:10px;background:#f00;display:grid;place-items:center}.youtube-icon:after{content:"";width:0;height:0;border-top:7px solid transparent;border-bottom:7px solid transparent;border-left:11px solid #fff;margin-left:3px}.subscribe-box{padding-top:20px;border-top:1px solid var(--border);min-height:65px}.client-link{display:inline-block;margin-top:20px;color:#bbb;font-size:12px}.client-link:hover{color:#fff}.tool{padding:12px 17px;border:1px solid var(--border);background:#101010;border-radius:50px;font-size:12px;font-weight:700;transition:.25s}.tool:hover{background:#fff;color:#000}
 .about{display:grid;grid-template-columns:.8fr 1.2fr;gap:75px;align-items:center}.about-img{aspect-ratio:1;border-radius:18px;overflow:hidden;border:1px solid var(--border)}.about-img img{width:100%;height:100%;object-fit:cover}.about h2{font-size:44px;line-height:1.05;letter-spacing:-2px}.about p{color:var(--muted);line-height:1.8;margin-top:17px}
 .contact{text-align:center;padding:145px 7%;position:relative;overflow:hidden}.contact:before{content:"";position:absolute;width:430px;height:430px;background:var(--accent);filter:blur(180px);opacity:.11;left:50%;top:50%;transform:translate(-50%,-50%)}.contact h2{position:relative;font-size:clamp(48px,7vw,90px);line-height:.95;letter-spacing:-5px}.contact p{position:relative;max-width:520px;margin:22px auto;color:var(--muted);line-height:1.7}.contact .primary{position:relative;padding:15px 27px}
 footer{padding:27px 7%;border-top:1px solid var(--border);display:flex;justify-content:space-between;gap:20px;color:#777;font-size:11px}.social{display:flex;gap:18px}.social a:hover{color:#fff}
-@media(max-width:900px){.nav-links{display:none}.hero{grid-template-columns:1fr}.visual{height:450px}.grid,.services{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr);margin:0 5%}.stat:nth-child(2){border-right:0}}
+@media(max-width:900px){.nav-links{display:none}.hero{grid-template-columns:1fr}.visual{height:450px}.grid,.services{grid-template-columns:repeat(2,1fr)}.clients{grid-template-columns:1fr}.about{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr);margin:0 5%}.stat:nth-child(2){border-right:0}}
 @media(max-width:600px){nav{padding:17px 5%}.hero{padding:135px 5% 60px}.hero h1{font-size:54px;letter-spacing:-3px}.actions{flex-direction:column}.visual{transform:scale(.78);transform-origin:left top;margin-bottom:-80px}.grid,.services{grid-template-columns:1fr}section{padding:80px 5%}.about h2{font-size:37px}.stats{margin:0 5%;grid-template-columns:1fr 1fr}.stat{padding:23px 14px}.stat h3{font-size:27px}footer{padding:25px 5%;flex-direction:column}}
 </style>
 </head>
 <body>
 <nav>
 <a href="#" class="logo">MANISH<span>.</span></a>
-<ul class="nav-links"><li><a href="#work">Work</a></li><li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul>
+<ul class="nav-links"><li><a href="#work">Work</a></li><li><a href="#services">Services</a></li><li><a href="#clients">Clients</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul>
 <a href="#contact" class="nav-btn">Let's Work</a>
 </nav>
 
@@ -74,6 +75,24 @@ footer{padding:27px 7%;border-top:1px solid var(--border);display:flex;justify-c
 <div class="item"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=90"><div class="overlay"><div><h3>Tech Thumbnail</h3><p>YouTube • Technology content</p></div></div></div>
 <div class="item"><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=90"><div class="overlay"><div><h3>Marketing Thumbnail</h3><p>YouTube • Marketing content</p></div></div></div>
 <div class="item"><img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=90"><div class="overlay"><div><h3>Personal Brand</h3><p>YouTube • Personal branding</p></div></div></div>
+</div>
+</section>
+
+<section id="clients">
+<div class="label">Clients</div>
+<h2 class="title">CREATORS I’VE<br>WORKED WITH.</h2>
+<p class="desc">YouTube channels are shown with the official YouTube subscribe widget, including the channel avatar, name and subscriber count when YouTube provides it.</p>
+<div class="clients">
+<div class="client-card">
+<div class="client-top"><div><div class="client-name">Sarthak Goswami</div><div class="client-role">YouTube Client</div></div><div class="youtube-icon"></div></div>
+<div class="subscribe-box"><div class="g-ytsubscribe" data-channel="sundaysarthak" data-layout="full" data-theme="dark" data-count="default"></div></div>
+<a class="client-link" href="https://youtube.com/@sundaysarthak" target="_blank" rel="noopener">Visit YouTube Channel →</a>
+</div>
+<div class="client-card">
+<div class="client-top"><div><div class="client-name">Bobursay Divaliyev</div><div class="client-role">YouTube Client</div></div><div class="youtube-icon"></div></div>
+<div class="subscribe-box"><div class="g-ytsubscribe" data-channel="bobursaydivaliyev" data-layout="full" data-theme="dark" data-count="default"></div></div>
+<a class="client-link" href="https://youtube.com/@bobursaydivaliyev" target="_blank" rel="noopener">Visit YouTube Channel →</a>
+</div>
 </div>
 </section>
 
@@ -120,7 +139,7 @@ footer{padding:27px 7%;border-top:1px solid var(--border);display:flex;justify-c
 <script>
 const nav=document.querySelector('nav');
 window.addEventListener('scroll',()=>nav.style.background=scrollY>40?'rgba(7,7,7,.96)':'rgba(7,7,7,.78)');
-const reveal=document.querySelectorAll('.item,.service,.stat,.about-img,.about>div:nth-child(2)');
+const reveal=document.querySelectorAll('.item,.service,.stat,.about-img,.about>div:nth-child(2),.client-card');
 const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.style.opacity=1;e.target.style.transform='translateY(0)'}}),{threshold:.12});
 reveal.forEach(el=>{el.style.opacity=0;el.style.transform='translateY(24px)';el.style.transition='opacity .7s ease, transform .7s ease';io.observe(el)});
 </script>
