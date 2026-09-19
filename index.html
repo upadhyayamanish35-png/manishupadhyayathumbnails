@@ -18,8 +18,8 @@ body:after{content:"";position:fixed;z-index:-1;inset:0;pointer-events:none;opac
 .nav-btn,.primary{display:inline-flex;align-items:center;justify-content:center;background:#ffd21a;color:#090909;border-radius:9px;font-weight:900;font-size:12px;padding:11px 17px;transition:.25s}.nav-btn:hover,.primary:hover{background:#fff;color:#090909;transform:translateY(-2px)}
 .whatsapp{background:var(--green)!important;color:#06140a!important}.whatsapp:hover{background:#454545!important;color:#fff!important}
 .top-contact{margin-top:72px;padding:10px 6%;display:flex;justify-content:center;gap:9px;flex-wrap:wrap;border-bottom:1px solid var(--line);background:#fff}.top-contact a{padding:7px 11px;border:1px solid var(--line);border-radius:999px;color:#aaa;font-size:10px;font-weight:800;transition:.25s}.top-contact a:hover{color:#fff;border-color:rgba(255,210,26,.55);transform:translateY(-2px)}
-.hero{min-height:calc(100vh - 116px);padding:75px 6% 80px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:65px;position:relative}
-.hero-copy{position:relative;z-index:2}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;color:#ddd;font-size:11px;background:#111;margin-bottom:23px}
+.hero{min-height:calc(100vh - 116px);padding:75px 6% 80px;display:flex;align-items:center;position:relative}
+.hero-copy{position:relative;z-index:2;max-width:900px}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;color:#ddd;font-size:11px;background:#111;margin-bottom:23px}
 h1,.section-title,.about h2,.contact h2{font-family:var(--display);text-transform:uppercase;font-weight:400}h1{font-size:clamp(58px,8vw,106px);line-height:.82;letter-spacing:1px}h1 span{color:#171717}
 .hero-copy>p{max-width:610px;color:var(--muted);font-size:14px;line-height:1.8;margin-top:24px}.actions{display:flex;gap:10px;margin-top:30px}.secondary{display:inline-flex;padding:11px 17px;border:1px solid var(--line);border-radius:9px;font-size:12px;font-weight:800;transition:.25s}.secondary:hover{background:#fff;color:#000}
 .hero-art{min-height:520px;display:flex;align-items:center;justify-content:center;position:relative}.hero-card{width:min(460px,100%);aspect-ratio:1/1.05;border:1px solid var(--line);border-radius:25px;background:#141414;padding:15px;transform:rotate(3deg);box-shadow:0 30px 70px rgba(0,0,0,.14)}.hero-card img{width:100%;height:100%;object-fit:cover;border-radius:18px}.hero-badge{position:absolute;left:0;bottom:45px;background:#111;color:#fff;border-radius:12px;padding:12px 15px;box-shadow:0 15px 35px rgba(0,0,0,.4);font-size:11px;font-weight:900;transform:rotate(-5deg)}.hero-badge span{display:block;color:#171717;font-size:18px;margin-top:3px}
@@ -66,10 +66,7 @@ footer{padding:25px 6%;border-top:1px solid var(--line);display:flex;justify-con
 <p>I’m Manish Upadhyaya — a creative thumbnail designer combining Photoshop, Canva, Figma and AI tools to create bold visuals for YouTube creators, brands and digital projects.</p>
 <div class="actions"><a class="primary" href="#work">VIEW MY WORK →</a><a class="secondary" href="https://wa.me/qr/DVHQQGB3ZCBDB1" target="_blank" rel="noopener">CHAT WITH ME 💬</a></div>
 </div>
-<div class="hero-art">
-<div class="hero-card"><img src="assets/profile.webp" alt="Manish Upadhyaya profile photo"></div>
-<div class="hero-badge">THUMBNAIL DESIGNER<span>100+ CREATIVE PROJECTS</span></div>
-</div>
+
 </header>
 
 <div class="stats">
@@ -88,7 +85,6 @@ footer{padding:25px 6%;border-top:1px solid var(--line);display:flex;justify-con
 
 <section id="about">
 <div class="about-grid">
-<div class="profile-wrap reveal"><div class="profile-frame"><img src="assets/profile.webp" alt="Manish Upadhyaya"></div><div class="profile-tag">MANISH UPADHYAYA<br>DESIGNER • CREATOR</div></div>
 <div class="about-copy reveal">
 <div class="section-kicker">02 / About Me</div>
 <h2>DESIGN WITH<br>PURPOSE. CREATE<br>WITH IMPACT.</h2>
